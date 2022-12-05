@@ -1,6 +1,6 @@
 const findTheOldest = (people) => {
-  let today = new Date();
-  let currentYear = today.getFullYear();
+  const today = new Date();
+  const currentYear = today.getFullYear();
 
   for (const person of people) {
     const age = (person.yearOfDeath - person.yearOfBirth) || (currentYear - person.yearOfBirth);
