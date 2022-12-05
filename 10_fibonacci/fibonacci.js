@@ -7,10 +7,6 @@ const fibonacci = (num) => {
     return Number(num);
   }
 
-  if (typeof(num) === "string") {
-    return fibonacci(num-1) + fibonacci(num-2);
-  }
-
   return fibonacci(num-1) + fibonacci(num-2);
 };
 
